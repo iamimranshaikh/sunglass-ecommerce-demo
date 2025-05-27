@@ -1,0 +1,84 @@
+iam_imranshaikh
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sunglass Zone - Stylish Sunglasses</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">Sunglass Zone</div>
+        <nav>
+            <ul>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Stylish Sunglasses</h1>
+        <p>Protect your eyes and elevate your look</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section class="slider" aria-label="Featured Sunglasses">
+        <img src="sunglasses1.jpg.jpg" alt="Trendy Sunglasses Model 1" />
+        <img src="sunglasses2.jpg.jpg" alt="Trendy Sunglasses Model 2" />
+        <img src="sunglasses3.jpg.jpg" alt="Trendy Sunglasses Model 3" />
+        <img src="sunglasses4.jpg.jpg" alt="Trendy Sunglasses Model 4" />
+        <img src="sunglasses5.jpg.jpg" alt="Trendy Sunglasses Model 5" />
+        <img src="sunglasses6.jpg.jpg" alt="Trendy Sunglasses Model 6" />
+        <img src="sunglasses7.jpg.jpg" alt="Trendy Sunglasses Model 7" />
+        <img src="sunglasses8.jpg.jpg" alt="Trendy Sunglasses Model 8" />
+    </section>
+
+    <section id="products" class="products" aria-label="Product Listing">
+        <h2>Our Collection</h2>
+        <div class="filter-bar">
+            <input type="text" id="searchInput" aria-label="Search sunglasses" placeholder="Search sunglasses..." />
+        </div>
+        <div class="product-grid" id="productGrid">
+            <!-- Product cards inserted by JavaScript -->
+        </div>
+    </section>
+
+    <div class="cart-toggle" id="cartToggle" aria-label="Toggle shopping cart">🛒 Cart</div>
+    <aside class="cart" id="cart" aria-label="Shopping cart" aria-live="polite" aria-atomic="true" role="region" hidden>
+        <h3>Your Cart</h3>
+        <ul class="cart-items" id="cartItems"></ul>
+        <div class="cart-total" id="cartTotal"></div>
+    </aside>
+
+    <section id="about" class="about" aria-label="About us">
+        <h2>About Us</h2>
+        <p>
+            At Sunglass Zone, we bring you the latest in stylish and quality
+            sunglasses with UV protection. Elevate your look and protect your eyes.
+        </p>
+    </section>
+
+    <section id="contact" class="contact" aria-label="Contact us">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="https://formspree.io/f/yourformid" method="POST" novalidate>
+            <input type="text" name="name" placeholder="Your Name" required aria-required="true" autocomplete="name" />
+            <input type="email" name="email" placeholder="Your Email" required aria-required="true"
+                autocomplete="email" />
+            <textarea name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Sunglass Zone. All rights reserved.
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
